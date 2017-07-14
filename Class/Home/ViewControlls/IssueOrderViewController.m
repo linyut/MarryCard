@@ -296,8 +296,6 @@
         self.modelHeaderView.hidden = NO;
         [self.modelHeaderView showTableViewWithIndex:selectIndex];
 
-//        OrderCardModelSelectHeaderView *modelHeaderView = [[NSBundle mainBundle] loadNibNamed:@"OrderCardModelSelectHeaderView" owner:nil options:nil].lastObject;
-//        [self.view addSubview:modelHeaderView];
     };
     sectionHeaderView.addAddressBtnBlock = ^{
         NSMutableArray *array = [[NSMutableArray alloc] initWithArray:sectionDict[@"passAddress"]];
