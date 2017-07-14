@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="OrderCardTypeLeftCell" id="KGk-i7-Jjw" customClass="OrderCardTypeLeftCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7S2-Me-Z2m">
+                        <rect key="frame" x="0.0" y="0.0" width="80" height="43"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo 奥迪" translatesAutoresizingMaskIntoConstraints="NO" id="jnd-pY-KD7">
+                                <rect key="frame" x="21" y="14" width="38" height="15"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="jnd-pY-KD7" firstAttribute="top" secondItem="7S2-Me-Z2m" secondAttribute="top" constant="14" id="FTK-TX-q2o"/>
+                            <constraint firstAttribute="width" constant="80" id="sWZ-Vn-GEj"/>
+                            <constraint firstItem="jnd-pY-KD7" firstAttribute="centerX" secondItem="7S2-Me-Z2m" secondAttribute="centerX" id="vcE-Ts-XhY"/>
+                            <constraint firstAttribute="bottom" secondItem="jnd-pY-KD7" secondAttribute="bottom" constant="14" id="w5a-0g-t8I"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="特斯拉" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gch-PE-xcM">
+                        <rect key="frame" x="80" y="8" width="100" height="27"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="100" id="wFI-s7-4DN"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iDk-nA-270">
+                        <rect key="frame" x="0.0" y="42" width="320" height="1"/>
+                        <color key="backgroundColor" red="0.94509803920000002" green="0.94509803920000002" blue="0.94509803920000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="pUm-xT-hvS"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="7S2-Me-Z2m" secondAttribute="bottom" id="0wD-Fm-ruP"/>
+                    <constraint firstItem="7S2-Me-Z2m" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="1Z7-G0-3Cx"/>
+                    <constraint firstAttribute="trailing" secondItem="iDk-nA-270" secondAttribute="trailing" id="3Tq-fe-ybD"/>
+                    <constraint firstAttribute="bottom" secondItem="iDk-nA-270" secondAttribute="bottom" id="5Wk-Tm-tu5"/>
+                    <constraint firstItem="gch-PE-xcM" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="CdL-gc-6kc"/>
+                    <constraint firstItem="gch-PE-xcM" firstAttribute="bottom" secondItem="H2p-sc-9uM" secondAttribute="bottomMargin" id="HFA-gA-GVx"/>
+                    <constraint firstItem="7S2-Me-Z2m" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="mFN-dh-1c9"/>
+                    <constraint firstItem="iDk-nA-270" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="mOL-yt-nJg"/>
+                    <constraint firstItem="gch-PE-xcM" firstAttribute="leading" secondItem="7S2-Me-Z2m" secondAttribute="trailing" id="wX4-UV-Mf8"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="cardImageView" destination="jnd-pY-KD7" id="fdL-e7-2iR"/>
+                <outlet property="cardNameLabel" destination="gch-PE-xcM" id="ePz-aH-ryT"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="logo 奥迪" width="38" height="15"/>
+    </resources>
+</document>

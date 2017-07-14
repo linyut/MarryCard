@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="OptionalCardViewController">
+            <connections>
+                <outlet property="brandBtn" destination="3yr-oc-EOo" id="pGi-4s-3zo"/>
+                <outlet property="headerView" destination="L39-0q-H9U" id="s0R-Z0-zXq"/>
+                <outlet property="listTableView" destination="5qN-Sd-1QN" id="ib3-YB-Oin"/>
+                <outlet property="modelBtn" destination="g9i-8V-tny" id="2gy-fH-lge"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="128" sectionHeaderHeight="44" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="5qN-Sd-1QN">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <color key="backgroundColor" red="0.93333333333333335" green="0.93333333333333335" blue="0.93333333333333335" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="0.93333333333333335" green="0.93333333333333335" blue="0.93333333333333335" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="5qN-Sd-1QN" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="1Ja-gt-7Zu"/>
+                <constraint firstItem="5qN-Sd-1QN" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="3MV-6R-2Lu"/>
+                <constraint firstAttribute="bottom" secondItem="5qN-Sd-1QN" secondAttribute="bottom" id="iLx-zC-kvA"/>
+                <constraint firstAttribute="trailing" secondItem="5qN-Sd-1QN" secondAttribute="trailing" id="oHu-e0-MKF"/>
+            </constraints>
+        </view>
+        <view contentMode="scaleToFill" id="L39-0q-H9U">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="45"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0Ym-cg-Eij">
+                    <rect key="frame" x="187" y="5" width="1" height="34"/>
+                    <color key="backgroundColor" red="0.93333333333333335" green="0.93333333333333335" blue="0.93333333333333335" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="1" id="vnN-vg-T3e"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MYR-tO-RDr">
+                    <rect key="frame" x="0.0" y="44" width="375" height="1"/>
+                    <color key="backgroundColor" red="0.93333333330000001" green="0.93333333330000001" blue="0.93333333330000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="Ge5-Af-PYK"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3yr-oc-EOo">
+                    <rect key="frame" x="0.0" y="0.0" width="187" height="44"/>
+                    <state key="normal" title="品牌" image="下拉箭头">
+                        <color key="titleColor" red="0.29019607843137252" green="0.29019607843137252" blue="0.29019607843137252" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="brandBtnClick:" destination="-1" eventType="touchUpInside" id="SU4-in-IoT"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g9i-8V-tny">
+                    <rect key="frame" x="188" y="0.0" width="187" height="44"/>
+                    <state key="normal" title="型号" image="下拉箭头">
+                        <color key="titleColor" red="0.29019607843137252" green="0.29019607843137252" blue="0.29019607843137252" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="modelBtnClick:" destination="-1" eventType="touchUpInside" id="amH-uh-Nbc"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="g9i-8V-tny" secondAttribute="bottom" constant="1" id="2Fu-2i-Nl4"/>
+                <constraint firstItem="MYR-tO-RDr" firstAttribute="leading" secondItem="L39-0q-H9U" secondAttribute="leading" id="3Qb-Eg-NrC"/>
+                <constraint firstItem="0Ym-cg-Eij" firstAttribute="leading" secondItem="3yr-oc-EOo" secondAttribute="trailing" id="42n-jo-ZeB"/>
+                <constraint firstAttribute="bottom" secondItem="3yr-oc-EOo" secondAttribute="bottom" constant="1" id="4k8-GA-pNv"/>
+                <constraint firstItem="g9i-8V-tny" firstAttribute="top" secondItem="L39-0q-H9U" secondAttribute="top" id="FFZ-WI-sqH"/>
+                <constraint firstItem="3yr-oc-EOo" firstAttribute="leading" secondItem="L39-0q-H9U" secondAttribute="leading" id="Fhe-kX-kWo"/>
+                <constraint firstItem="g9i-8V-tny" firstAttribute="leading" secondItem="0Ym-cg-Eij" secondAttribute="trailing" id="T3S-UA-heN"/>
+                <constraint firstAttribute="bottom" secondItem="0Ym-cg-Eij" secondAttribute="bottom" constant="6" id="Zcz-Gy-3RC"/>
+                <constraint firstItem="3yr-oc-EOo" firstAttribute="top" secondItem="L39-0q-H9U" secondAttribute="top" id="aL8-N9-EWC"/>
+                <constraint firstAttribute="trailing" secondItem="g9i-8V-tny" secondAttribute="trailing" id="jCY-gM-tPW"/>
+                <constraint firstAttribute="bottom" secondItem="MYR-tO-RDr" secondAttribute="bottom" id="mG0-43-ee3"/>
+                <constraint firstItem="0Ym-cg-Eij" firstAttribute="centerX" secondItem="L39-0q-H9U" secondAttribute="centerX" id="wgk-kV-jJ0"/>
+                <constraint firstAttribute="trailing" secondItem="MYR-tO-RDr" secondAttribute="trailing" id="yvV-T0-zeC"/>
+                <constraint firstItem="0Ym-cg-Eij" firstAttribute="top" secondItem="L39-0q-H9U" secondAttribute="top" constant="5" id="znw-hL-p7R"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-410.5" y="97"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="下拉箭头" width="7" height="9"/>
+    </resources>
+</document>

@@ -1,0 +1,52 @@
+//
+//  MarrayCard.pch
+//  MarryCard
+//
+//  Created by 方寸山 on 2017/6/21.
+//  Copyright © 2017年 LINYUT. All rights reserved.
+//
+
+//#ifndef MarrayCard_pch
+//#define MarrayCard_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+
+#ifdef __OBJC__
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#import "Define.h"
+#import "EnvSetting.h"
+#import "NFGInterfaceConstantDefine.h"
+#import "YYKit.h"
+#import "Message.h"
+#import "SVProgressHUD.h"
+#import "UINavigationController+Function.h"
+#import "SelectMenuView.h"
+#import "MenuTableView.h"
+#import "CommonMethod.h"
+#import "NSDate+ITTAdditions.h"
+#import "DrawView.h"
+#import "NFGHTTPManager.h"
+
+/*********************************************开发四部*****************************************************/
+
+#import "MJRefresh.h"
+#import "MJExtension.h"
+#import "BOCConstant.h"
+#import "NSString+Extensions.h"
+#import "UIViewController+HUD.h"
+#import "UIView+Extensions.h"
+#import "UIAlertController+Extend.h"
+
+/********************************************************************************************************/
+
+// 提示框
+#define MESSAGE(msg)\
+{\
+[Message message:msg time:3.0f];\
+}\
+
+
+#endif /* MarrayCard_pch */

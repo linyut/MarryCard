@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ContactPhoneViewController">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8kB-xy-d0b">
+                    <rect key="frame" x="0.0" y="10" width="375" height="120"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="小科网络科技（上海）有限公司" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Uj-Cb-h6z">
+                            <rect key="frame" x="0.0" y="35" width="375" height="25"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="25" id="s3r-hZ-2Cb"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8dy-5o-JOb">
+                            <rect key="frame" x="0.0" y="75" width="375" height="30"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="30" id="evR-FJ-sCv"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <state key="normal" title="客服电话：021-37898998"/>
+                            <connections>
+                                <action selector="phoneBtnClick:" destination="-1" eventType="touchUpInside" id="WvJ-4V-hWg"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="120" id="214-4e-UJK"/>
+                        <constraint firstItem="4Uj-Cb-h6z" firstAttribute="top" secondItem="8kB-xy-d0b" secondAttribute="top" constant="35" id="C51-8r-cMz"/>
+                        <constraint firstItem="8dy-5o-JOb" firstAttribute="top" secondItem="4Uj-Cb-h6z" secondAttribute="bottom" constant="15" id="D2R-KV-Gnn"/>
+                        <constraint firstItem="8dy-5o-JOb" firstAttribute="leading" secondItem="8kB-xy-d0b" secondAttribute="leading" id="MO7-ye-NIt"/>
+                        <constraint firstItem="4Uj-Cb-h6z" firstAttribute="leading" secondItem="8kB-xy-d0b" secondAttribute="leading" id="PFx-dJ-1PM"/>
+                        <constraint firstAttribute="trailing" secondItem="8dy-5o-JOb" secondAttribute="trailing" id="XX6-dD-mhO"/>
+                        <constraint firstAttribute="trailing" secondItem="4Uj-Cb-h6z" secondAttribute="trailing" id="hS5-Up-qT9"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.93333333333333335" green="0.93333333333333335" blue="0.93333333333333335" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="8kB-xy-d0b" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="LT6-hg-Sfc"/>
+                <constraint firstAttribute="trailing" secondItem="8kB-xy-d0b" secondAttribute="trailing" id="Zq6-8T-2Od"/>
+                <constraint firstItem="8kB-xy-d0b" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="10" id="zwc-Pa-nbJ"/>
+            </constraints>
+        </view>
+    </objects>
+</document>
